@@ -1,0 +1,46 @@
+/* #BE861E */
+body {
+    font-family: hack, monospace;
+}
+
+hr {
+    border-top: 2px solid #FAD190;
+}
+
+a {
+  color: #BF8720!important;
+}
+a:hover {
+  color: #D4A552!important;
+}
+.lighter-link {
+  color: #D4A552!important;
+}
+.no-border {
+    border: 0px solid black;
+}
+
+.bg-dark {
+  background-color: #2E2A24!important;
+}
+.text-light {
+  color: #FAD190!important;
+}
+
+
+.my-border {
+    border: 1px solid #FAD190
+}
+
+.h-100 {
+  height: 100vh;
+}
+.my-spacer {
+  height: 5vh;
+}
+.my-little-spacer {
+  height: 2.5vh;
+}
+.my-big-spacer {
+  height: 15vh;
+}

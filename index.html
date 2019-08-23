@@ -5,12 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
     <link rel="stylesheet" href="assets/style.css">
-    <title>Listmon</title>
+    <title>TASKMASTER DCLXVI!</title>
 </head>
 
-<body>
+<body class="bg-dark text-light">
+
+    <div class="container bg-dark text-light">
+        <div class="row">
+            <div class="col-12 text-center ">
+                <div class="my-little-spacer"></div>
+                <hr>
+                <h3>¡¡¡Taskmaster DCLXVI!!!</h3>
+                <div class="my-little-spacer"></div>
+
+                <div class="d-flex justify-content-center">
+                    <form onsubmit="app.controllers.listController.addList(event)">
+                        <div class="input-group">
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="listName" placeholder="My Awesome List"
+                                    required>
+                            </div>
+                            <div class="form-group append">
+                                <button class="btn btn-success" type="submit">Add List</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+                <hr>
+
+            </div>
+        </div>
+
+        <div id="lists" class="row">
+
+
+
+        </div>
+    </div>
 
 
     <script src="app/main.js" type="module"></script>
