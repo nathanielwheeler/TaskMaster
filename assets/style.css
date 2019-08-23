@@ -20,6 +20,15 @@ a:hover {
     background: black;
 }
 
+::placeholder {
+    color: rgba(190, 134, 30, 0.5)!important;
+}
+input, textarea {
+    color: #FAD190!important;
+    background-color: #2E2A24!important;
+    border-color: #FAD190!important;
+}
+
 .bg-dark {
   background-color: #2E2A24!important;
 }
@@ -27,12 +36,12 @@ a:hover {
   color: #FAD190!important;
 }
 .text-list {
-    color: #BE861E!important;
+    color: #FAD190!important;
 }
 
 
 .my-border {
-    border: 1px solid #BE861E
+    border: 1px solid #FAD190
 }
 
 .h-100 {
@@ -49,21 +58,9 @@ a:hover {
 }
 
 
-/*
- .btn-danger {
-    color: #9d0006;
-    background: #9d0006;
-    border-color: #9d0006;
-}
-.btn-danger:hover {
-    color: #cc241d;
-    background: #cc241d;
-    border-color: #cc241d;
-}
-*/
 .badge-danger {
-    background: #9d0006;
+    color: #D8CBAA!important;
 }
-.badge-danger {
-    background: #cc241d;
+.badge-danger:hover {
+    color: #BE861E!important;
 } 
