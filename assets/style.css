@@ -16,8 +16,8 @@ a:hover {
 .lighter-link {
   color: #D4A552!important;
 }
-.no-border {
-    border: 0px solid black;
+.bg-list {
+    background: black;
 }
 
 .bg-dark {
@@ -26,10 +26,13 @@ a:hover {
 .text-light {
   color: #FAD190!important;
 }
+.text-list {
+    color: #BE861E!important;
+}
 
 
 .my-border {
-    border: 1px solid #FAD190
+    border: 1px solid #BE861E
 }
 
 .h-100 {

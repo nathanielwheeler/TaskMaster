@@ -1,27 +1,40 @@
 export default class List {
-    //TODO You will need to create a constructor 
-    //and the methods needed to create the view template for this model
     constructor(data) {
-        this.name = data.name
+        this.title = data.title
         this.items = data.items || []
 
-        console.log(`"${this.name}" List Created!`)
+        console.log(`"${this.title}" List Created!`)
     }
 
-    getTemplate(index) {
+    getTemplate(listIndex) {
         let template =
             `
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                <div class="card bg-dark text-light my-border">
-                    <h4 class="card-header">Example List</h4>
+            <div class="col-10 col-md-6 col-lg-4 col-xl-3">
+                <div class="card bg-list text-list my-border">
+                    <h5 class="card-header text-center">${this.title}</h5>
+                    <div class ="card-body d-flex justify-content-center">
+                        <form onsubmit="app.controllers.listController.addItem(event, ${listIndex})">
+                            <div class="input-group">
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="item" placeholder="New Item"
+                                        required>
+                                </div>
+                                <div class="form-group append">
+                                    <button class="btn btn-outline-success" type="submit">+</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
                     <ul class="list-group ">
             `
-        template += this.drawItems(index)
+        template += this.drawItems(listIndex)
         template +=
             `
                     </ul>
                     <div class="card-footer d-flex justify-content-center">
-                        <button class="btn btn-outline-danger">Delete List</button>
+                        <button onclick="app.controllers.listController.deleteList(${listIndex})" class="btn btn-outline-danger">Delete List</button>
                     </div>
                 </div>
             </div>
@@ -33,7 +46,7 @@ export default class List {
         this.items.forEach((item, itemIndex) => {
             itemTemplate +=
                 `
-                        <li class="list-group-item bg-dark">
+                        <li class="list-group-item bg-list">
                             <a class="badge badge-danger"
                                 onclick="app.controllers.listController.deleteItem(${listIndex}, ${itemIndex})"
                                 type="button">X</a>
