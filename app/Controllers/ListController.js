@@ -35,8 +35,10 @@ export default class ListController {
         _drawLists()
     }
     deleteList(index) {
-        _listService.deleteList(index)
-        _drawLists()
+        if (window.confirm("This will delete your list.  Forever.  Continue?")) {
+            _listService.deleteList(index)
+            _drawLists()
+        }
     }
 
     // Create, and delete items in lists

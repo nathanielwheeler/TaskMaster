@@ -47,3 +47,23 @@ a:hover {
 .my-big-spacer {
   height: 15vh;
 }
+
+
+/*
+ .btn-danger {
+    color: #9d0006;
+    background: #9d0006;
+    border-color: #9d0006;
+}
+.btn-danger:hover {
+    color: #cc241d;
+    background: #cc241d;
+    border-color: #cc241d;
+}
+*/
+.badge-danger {
+    background: #9d0006;
+}
+.badge-danger {
+    background: #cc241d;
+} 
