@@ -9,7 +9,7 @@ export default class List {
     getTemplate(listIndex) {
         let template =
             `
-            <div class="col-10 col-md-6 col-lg-4 col-xl-3">
+            <div class="col-12 col-md-6 col-xl-4">
                 <div class="card bg-list text-list my-border">
                     <h5 class="card-header text-center">${this.title}</h5>
                     <div class ="card-body d-flex justify-content-center">
