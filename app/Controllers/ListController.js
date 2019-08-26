@@ -50,8 +50,10 @@ export default class ListController {
         _drawLists()
     }
     deleteItem(listIndex, itemIndex) {
-        _listService.deleteItem(listIndex, itemIndex)
-        _drawLists()
+        if (window.confirm("This will delete your list item.  Forever.  Continue?")) {
+            _listService.deleteItem(listIndex, itemIndex)
+            _drawLists()
+        }
     }
 
 
